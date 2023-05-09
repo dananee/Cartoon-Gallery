@@ -124,126 +124,70 @@ class _VideoFolderThreeState extends State<VideoFolderThree> {
             physics: const ScrollPhysics(),
             child: Column(
               children: [
-                SizedBox(height: 5 * SizeConfig.blockSizeVertical),
-                SizedBox(
-                  child: GridView.count(
-                    shrinkWrap: true,
-                    physics: const NeverScrollableScrollPhysics(),
-                    crossAxisCount: 2,
-                    childAspectRatio: (1 / 1),
-                    padding: EdgeInsets.zero,
-                    mainAxisSpacing: 10,
-                    crossAxisSpacing: 10,
-                    children: List.generate(
-                      assetNames.length,
-                      (index) {
-                        VideoPlayerController controller =
-                            controllersList[index];
-                        return SizedBox(
-                          height: 20 * SizeConfig.blockSizeVertical,
-                          child: GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => FullScreenVideo(
-                                      videoUrl: assetsPath[index]),
-                                ),
-                              );
-                            },
-                            child: Card(
-                                color: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(16),
-                                  side: const BorderSide(
-                                    color: Colors.grey,
-                                    width: 0.3,
-                                  ),
-                                ),
-                                child: Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    SizedBox(
-                                      width: 15 * SizeConfig.blockSizeVertical,
-                                      height: 15 * SizeConfig.blockSizeVertical,
-                                      child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(8),
-                                          child: VideoPlayer(controller)),
-                                    ),
-                                    Flexible(
-                                      child: Text(
-                                        assetNames[index],
-                                        style: TextStyle(
-                                          fontSize: 1.7 *
-                                              SizeConfig.blockSizeVertical,
-                                          fontFamily: 'fontHeading',
-                                          color: const Color(0xFF282828),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ),
+                noVideos
+                    ? Container()
+                    : SizedBox(height: 5 * SizeConfig.blockSizeVertical),
                 noVideos
                     ? SizedBox(
                         width: 100 * SizeConfig.blockSizeHorizontal,
+                        height: 93 * SizeConfig.blockSizeVertical,
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            SizedBox(height: 8 * SizeConfig.blockSizeVertical),
                             SizedBox(
                               height: 25 * SizeConfig.blockSizeVertical,
                               width: 25 * SizeConfig.blockSizeVertical,
-                              child: Card(
-                                color: Colors.white,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(16),
-                                  side: const BorderSide(
-                                    color: Colors.grey,
-                                    width: 0.3,
-                                  ),
-                                ),
-                                child: Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    SizedBox(
-                                      width: 15 * SizeConfig.blockSizeVertical,
-                                      height: 15 * SizeConfig.blockSizeVertical,
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(8),
-                                        child: Image.asset(
-                                          "assets/SubFolders/emptyfolder.png",
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                    ),
-                                    Flexible(
-                                      child: Text(
-                                        "No videos yet",
-                                        style: TextStyle(
-                                          fontSize: 1.7 *
-                                              SizeConfig.blockSizeVertical,
-                                          fontFamily: 'fontHeading',
-                                          color: const Color(0xFF282828),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(8),
+                                child: Image.asset(
+                                  "assets/SubFolders/emptyfolder.png",
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ),
                           ],
                         ),
                       )
-                    : Container(),
-                SizedBox(height: 5 * SizeConfig.blockSizeVertical),
+                    : SizedBox(
+                        child: GridView.count(
+                          physics: const NeverScrollableScrollPhysics(),
+                          crossAxisCount: 2,
+                          childAspectRatio: (1 / 0.5),
+                          shrinkWrap: true,
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 2 * SizeConfig.blockSizeHorizontal),
+                          mainAxisSpacing: 16,
+                          crossAxisSpacing: 16,
+                          children: List.generate(
+                            assetNames.length,
+                            (index) {
+                              VideoPlayerController controller =
+                                  controllersList[index];
+                              return SizedBox(
+                                height: 20 * SizeConfig.blockSizeVertical,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => FullScreenVideo(
+                                            videoUrl: assetsPath[index]),
+                                      ),
+                                    );
+                                  },
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(8),
+                                    child: VideoPlayer(controller),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                noVideos
+                    ? Container()
+                    : SizedBox(height: 5 * SizeConfig.blockSizeVertical),
               ],
             ),
           ),

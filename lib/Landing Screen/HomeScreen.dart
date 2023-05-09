@@ -17,34 +17,29 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
         body: Container(
           width: 100 * SizeConfig.blockSizeHorizontal,
+          height: 100 * SizeConfig.blockSizeVertical,
           padding: EdgeInsets.symmetric(
               horizontal: 5 * SizeConfig.blockSizeHorizontal),
           child: SingleChildScrollView(
             physics: const ScrollPhysics(),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(
                   width: 100 * SizeConfig.blockSizeHorizontal,
-                  height: 15 * SizeConfig.blockSizeVertical,
-                ),
-                SizedBox(
-                  width: 100 * SizeConfig.blockSizeHorizontal,
-                  height: 30 * SizeConfig.blockSizeVertical,
+                  height: 90 * SizeConfig.blockSizeVertical,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    crossAxisAlignment: CrossAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       SizedBox(
-                        width: 45 * SizeConfig.blockSizeHorizontal,
-                        height: size.height * 0.3,
+                        width: 20 * SizeConfig.blockSizeHorizontal,
                         child: GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -54,48 +49,18 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           },
-                          child: Card(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(16),
-                                side: const BorderSide(
-                                  color: Colors.grey,
-                                  width: 0.3,
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.all(
-                                      2 * SizeConfig.blockSizeHorizontal,
-                                    ),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(16),
-                                      child: const Image(
-                                        image: AssetImage(
-                                            "assets/HomeScreen/folder.png"),
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Text(
-                                      "Folder 1",
-                                      style: TextStyle(
-                                        fontSize:
-                                            1.7 * SizeConfig.blockSizeVertical,
-                                        fontFamily: 'fontHeading',
-                                        color: const Color(0xFF282828),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              )),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: const Image(
+                              image:
+                                  AssetImage("assets/HomeScreen/folder1.png"),
+                              fit: BoxFit.contain,
+                            ),
+                          ),
                         ),
                       ),
                       SizedBox(
-                        width: 45 * SizeConfig.blockSizeHorizontal,
-                        height: size.height * 0.3,
+                        width: 20 * SizeConfig.blockSizeHorizontal,
                         child: GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -105,61 +70,18 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           },
-                          child: Card(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(16),
-                                side: const BorderSide(
-                                  color: Colors.grey,
-                                  width: 0.3,
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.all(
-                                      2 * SizeConfig.blockSizeHorizontal,
-                                    ),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(16),
-                                      child: const Image(
-                                        image: AssetImage(
-                                            "assets/HomeScreen/folder.png"),
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Text(
-                                      "Folder 2",
-                                      style: TextStyle(
-                                        fontSize:
-                                            1.7 * SizeConfig.blockSizeVertical,
-                                        color: const Color(0xFF282828),
-                                        fontFamily: 'fontHeading',
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              )),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: const Image(
+                              image:
+                                  AssetImage("assets/HomeScreen/folder2.png"),
+                              fit: BoxFit.contain,
+                            ),
+                          ),
                         ),
                       ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 5 * SizeConfig.blockSizeVertical,
-                ),
-                SizedBox(
-                  width: 100 * SizeConfig.blockSizeHorizontal,
-                  height: 30 * SizeConfig.blockSizeVertical,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
                       SizedBox(
-                        width: 45 * SizeConfig.blockSizeHorizontal,
-                        height: size.height * 0.3,
+                        width: 20 * SizeConfig.blockSizeHorizontal,
                         child: GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -169,48 +91,18 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           },
-                          child: Card(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(16),
-                                side: const BorderSide(
-                                  color: Colors.grey,
-                                  width: 0.3,
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.all(
-                                      2 * SizeConfig.blockSizeHorizontal,
-                                    ),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(16),
-                                      child: const Image(
-                                        image: AssetImage(
-                                            "assets/HomeScreen/folder.png"),
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Text(
-                                      "Folder 3",
-                                      style: TextStyle(
-                                        fontSize:
-                                            1.7 * SizeConfig.blockSizeVertical,
-                                        fontFamily: 'fontHeading',
-                                        color: const Color(0xFF282828),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              )),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: const Image(
+                              image:
+                                  AssetImage("assets/HomeScreen/folder3.png"),
+                              fit: BoxFit.contain,
+                            ),
+                          ),
                         ),
                       ),
                       SizedBox(
-                        width: 45 * SizeConfig.blockSizeHorizontal,
-                        height: size.height * 0.3,
+                        width: 20 * SizeConfig.blockSizeHorizontal,
                         child: GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -220,51 +112,18 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             );
                           },
-                          child: Card(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(16),
-                                side: const BorderSide(
-                                  color: Colors.grey,
-                                  width: 0.3,
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.all(
-                                      2 * SizeConfig.blockSizeHorizontal,
-                                    ),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(16),
-                                      child: const Image(
-                                        image: AssetImage(
-                                            "assets/HomeScreen/folder.png"),
-                                        fit: BoxFit.contain,
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Text(
-                                      "Folder 4",
-                                      style: TextStyle(
-                                        fontSize:
-                                            1.7 * SizeConfig.blockSizeVertical,
-                                        fontFamily: 'fontHeading',
-                                        color: const Color(0xFF282828),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              )),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: const Image(
+                              image:
+                                  AssetImage("assets/HomeScreen/folder4.png"),
+                              fit: BoxFit.contain,
+                            ),
+                          ),
                         ),
                       ),
                     ],
                   ),
-                ),
-                SizedBox(
-                  width: 100 * SizeConfig.blockSizeHorizontal,
-                  height: 10 * SizeConfig.blockSizeVertical,
                 ),
               ],
             ),

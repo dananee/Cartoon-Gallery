@@ -28,10 +28,8 @@ class _FullScreenVideoState extends State<FullScreenVideo> {
       allowedScreenSleep: false,
       allowFullScreen: true,
       deviceOrientationsAfterFullScreen: [
-        DeviceOrientation.landscapeRight,
         DeviceOrientation.landscapeLeft,
-        DeviceOrientation.portraitUp,
-        DeviceOrientation.portraitDown,
+        DeviceOrientation.landscapeRight
       ],
       videoPlayerController: _videoPlayerController,
       aspectRatio: _aspectRatio,
@@ -42,13 +40,13 @@ class _FullScreenVideoState extends State<FullScreenVideo> {
     _chewieController.addListener(() {
       if (_chewieController.isFullScreen) {
         SystemChrome.setPreferredOrientations([
-          DeviceOrientation.landscapeRight,
           DeviceOrientation.landscapeLeft,
+          DeviceOrientation.landscapeRight
         ]);
       } else {
         SystemChrome.setPreferredOrientations([
-          DeviceOrientation.portraitUp,
-          DeviceOrientation.portraitDown,
+          DeviceOrientation.landscapeLeft,
+          DeviceOrientation.landscapeRight
         ]);
       }
     });
@@ -59,12 +57,8 @@ class _FullScreenVideoState extends State<FullScreenVideo> {
   void dispose() {
     _videoPlayerController.dispose();
     _chewieController.dispose();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-    ]);
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
     super.dispose();
   }
 
@@ -74,8 +68,12 @@ class _FullScreenVideoState extends State<FullScreenVideo> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: SizedBox(
-          child: Chewie(
-            controller: _chewieController,
+          child: OrientationBuilder(
+            builder: (context, builder) {
+              return Chewie(
+                controller: _chewieController,
+              );
+            },
           ),
         ),
       ),
