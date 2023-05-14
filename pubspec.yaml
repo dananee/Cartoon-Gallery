@@ -49,8 +49,7 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   chewie: ^1.4.0
   video_player: ^2.6.1
-  video_thumbnail: ^0.5.3
-  pin_code_fields: ^7.4.0
+  virtual_keyboard_multi_language: ^1.0.3
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -70,6 +69,7 @@ flutter:
     - assets/HomeScreen/folder3.png
     - assets/HomeScreen/folder4.png
     - assets/HomeScreen/password-bg.jpg
+    - assets/HomeScreen/main-bg.png
     - assets/SubFolders/subFolder.png
     - assets/SubFolders/emptyfolder.png
     - assets/SubFolders/Folder1/

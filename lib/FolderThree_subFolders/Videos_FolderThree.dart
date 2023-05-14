@@ -118,19 +118,61 @@ class _VideoFolderThreeState extends State<VideoFolderThree> {
         backgroundColor: Colors.white,
         body: Container(
           width: 100 * SizeConfig.blockSizeHorizontal,
+          height: 100*SizeConfig.blockSizeVertical,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(
+                  'assets/HomeScreen/main-bg.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
           padding: EdgeInsets.symmetric(
               horizontal: 5 * SizeConfig.blockSizeHorizontal),
           child: SingleChildScrollView(
             physics: const ScrollPhysics(),
             child: Column(
               children: [
+                SizedBox(height: 5 * SizeConfig.blockSizeVertical),
+                SizedBox(
+                  width: 100 * SizeConfig.blockSizeHorizontal,
+                  height: 10 * SizeConfig.blockSizeVertical,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: Container(
+                          width: 5 * SizeConfig.blockSizeHorizontal,
+                          height: 8 * SizeConfig.blockSizeVertical,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(
+                              width: 1,
+                              color: Colors.purple,
+                            ),
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(8),
+                            ),
+                          ),
+                          child: Icon(
+                            Icons.arrow_back,
+                            color: Colors.purple,
+                            size: 3 * SizeConfig.blockSizeHorizontal,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 noVideos
                     ? Container()
                     : SizedBox(height: 5 * SizeConfig.blockSizeVertical),
                 noVideos
                     ? SizedBox(
                         width: 100 * SizeConfig.blockSizeHorizontal,
-                        height: 93 * SizeConfig.blockSizeVertical,
+                        height: 75 * SizeConfig.blockSizeVertical,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [

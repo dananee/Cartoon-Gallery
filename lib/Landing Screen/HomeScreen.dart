@@ -23,6 +23,13 @@ class _HomeScreenState extends State<HomeScreen> {
         body: Container(
           width: 100 * SizeConfig.blockSizeHorizontal,
           height: 100 * SizeConfig.blockSizeVertical,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(
+                  'assets/HomeScreen/main-bg.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
           padding: EdgeInsets.symmetric(
               horizontal: 5 * SizeConfig.blockSizeHorizontal),
           child: SingleChildScrollView(
@@ -36,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 90 * SizeConfig.blockSizeVertical,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       SizedBox(
                         width: 20 * SizeConfig.blockSizeHorizontal,
@@ -53,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             borderRadius: BorderRadius.circular(8),
                             child: const Image(
                               image:
-                                  AssetImage("assets/HomeScreen/folder1.png"),
+                              AssetImage("assets/HomeScreen/folder1.png"),
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -74,7 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             borderRadius: BorderRadius.circular(8),
                             child: const Image(
                               image:
-                                  AssetImage("assets/HomeScreen/folder2.png"),
+                              AssetImage("assets/HomeScreen/folder2.png"),
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -95,7 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             borderRadius: BorderRadius.circular(8),
                             child: const Image(
                               image:
-                                  AssetImage("assets/HomeScreen/folder3.png"),
+                              AssetImage("assets/HomeScreen/folder3.png"),
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -116,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             borderRadius: BorderRadius.circular(8),
                             child: const Image(
                               image:
-                                  AssetImage("assets/HomeScreen/folder4.png"),
+                              AssetImage("assets/HomeScreen/folder4.png"),
                               fit: BoxFit.contain,
                             ),
                           ),

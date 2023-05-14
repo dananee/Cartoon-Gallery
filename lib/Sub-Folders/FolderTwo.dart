@@ -4,7 +4,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../FolderTwo_subFolders/Videos_FolderTwo.dart';
 import '../main.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
+import 'package:virtual_keyboard_multi_language/virtual_keyboard_multi_language.dart';
+
 
 class FolderTwo extends StatefulWidget {
   const FolderTwo({Key? key}) : super(key: key);
@@ -15,15 +16,20 @@ class FolderTwo extends StatefulWidget {
 
 class _FolderTwoState extends State<FolderTwo> {
   List totalFolders = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
+  String _value = "";
   @override
   Widget build(BuildContext context) {
-    FocusScopeNode currentFocus = FocusScope.of(context);
     SizeConfig().init(context);
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
         body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/HomeScreen/main-bg.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
           width: 100 * SizeConfig.blockSizeHorizontal,
           padding: EdgeInsets.symmetric(
               horizontal: 5 * SizeConfig.blockSizeHorizontal),
@@ -32,6 +38,45 @@ class _FolderTwoState extends State<FolderTwo> {
             child: Column(
               children: [
                 SizedBox(height: 5 * SizeConfig.blockSizeVertical),
+                SizedBox(
+                  width: 100 * SizeConfig.blockSizeHorizontal,
+                  height: 10 * SizeConfig.blockSizeVertical,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: Container(
+                          width: 5 *
+                              SizeConfig
+                                  .blockSizeHorizontal,
+                          height: 8 *
+                              SizeConfig
+                                  .blockSizeVertical,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(
+                              width: 1,
+                              color:  Colors.purple,
+                            ),
+                            borderRadius: const BorderRadius.all(
+                              Radius.circular(8),
+                            ),
+                          ),
+                          child:  Icon(
+                            Icons.arrow_back,
+                            color: Colors.purple,
+                            size: 3 *
+                                SizeConfig
+                                    .blockSizeHorizontal,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 SizedBox(
                   child: GridView.count(
                     physics: const NeverScrollableScrollPhysics(),
@@ -43,178 +88,279 @@ class _FolderTwoState extends State<FolderTwo> {
                     crossAxisSpacing: 16,
                     children: List.generate(
                       totalFolders.length,
-                      (index) {
+                          (index) {
                         return SizedBox(
                           child: GestureDetector(
                             onTap: () {
-                              showDialog<void>(
+                              showModalBottomSheet(
+                                isScrollControlled: true,
+                                backgroundColor: Colors.transparent,
                                 context: context,
                                 builder: (BuildContext context) {
                                   return BackdropFilter(
                                     filter:
-                                        ImageFilter.blur(sigmaX: 2, sigmaY: 2),
+                                    ImageFilter.blur(sigmaX: 2, sigmaY: 2),
                                     child: StatefulBuilder(builder:
                                         (BuildContext context,
-                                            StateSetter setState) {
-                                      return AlertDialog(
-                                        backgroundColor: Colors.white,
-                                        contentPadding: EdgeInsets.zero,
-                                        shape: const RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.all(
-                                            Radius.circular(8),
+                                        StateSetter setState) {
+                                      return Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                          BorderRadius.circular(8),
+                                          image: const DecorationImage(
+                                            image: AssetImage(
+                                                'assets/HomeScreen/password-bg.jpg'),
+                                            fit: BoxFit.cover,
                                           ),
                                         ),
-                                        content: Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(8),
-                                          ),
-                                          width: 50 *
-                                              SizeConfig.blockSizeHorizontal,
-                                          child: SingleChildScrollView(
-                                            physics: const ScrollPhysics(),
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                if (!currentFocus
-                                                    .hasPrimaryFocus) {
-                                                  currentFocus.unfocus();
-                                                }
-                                              },
-                                              child: Container(
-                                                padding: EdgeInsets.symmetric(
-                                                    horizontal: 8 *
+                                        width: 100 *
+                                            SizeConfig.blockSizeHorizontal,
+                                        height:
+                                        80 * SizeConfig.blockSizeVertical,
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 5 *
+                                                SizeConfig.blockSizeHorizontal,
+                                            vertical: 2.5 *
+                                                SizeConfig.blockSizeHorizontal),
+                                        child: SingleChildScrollView(
+                                          physics: const ScrollPhysics(),
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                mainAxisAlignment:
+                                                MainAxisAlignment
+                                                    .spaceEvenly,
+                                                children: [
+                                                  Container(),
+                                                  Container(),
+                                                  Container(),
+                                                  Container(
+                                                    width: 7 *
                                                         SizeConfig
                                                             .blockSizeHorizontal,
-                                                    vertical: MediaQuery.of(
-                                                                    context)
-                                                                .viewInsets
-                                                                .bottom >
-                                                            0
-                                                        ? 3.5 *
-                                                            SizeConfig
-                                                                .blockSizeVertical
-                                                        : 7 *
-                                                            SizeConfig
-                                                                .blockSizeVertical),
-                                                width: 50 *
-                                                    SizeConfig
-                                                        .blockSizeHorizontal,
-                                                height: MediaQuery.of(context)
-                                                            .viewInsets
-                                                            .bottom >
-                                                        0
-                                                    ? 20 *
-                                                        SizeConfig
-                                                            .blockSizeVertical
-                                                    : 30 *
+                                                    height: 14 *
                                                         SizeConfig
                                                             .blockSizeVertical,
-                                                decoration: BoxDecoration(
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  image: const DecorationImage(
-                                                    image: AssetImage(
-                                                        'assets/HomeScreen/password-bg.jpg'),
-                                                    fit: BoxFit.cover,
-                                                  ),
-                                                ),
-                                                child: PinCodeTextField(
-                                                  appContext: context,
-                                                  textStyle: TextStyle(
-                                                    fontFamily: 'regularFont',
-                                                    fontSize: 1.8 *
-                                                        SizeConfig
-                                                            .blockSizeHorizontal,
-                                                    fontWeight: FontWeight.w400,
-                                                    color:
-                                                        const Color(0xFF181f36),
-                                                  ),
-                                                  pastedTextStyle: TextStyle(
-                                                    fontFamily: 'regularFont',
-                                                    fontSize: 1.8 *
-                                                        SizeConfig
-                                                            .blockSizeHorizontal,
-                                                    fontWeight: FontWeight.w400,
-                                                    color:
-                                                        const Color(0xFF181f36),
-                                                  ),
-                                                  length: 4,
-                                                  obscureText: false,
-                                                  pinTheme: PinTheme(
-                                                    fieldWidth: 8 *
-                                                        SizeConfig
-                                                            .blockSizeHorizontal,
-                                                    fieldHeight: MediaQuery.of(
-                                                                    context)
-                                                                .viewInsets
-                                                                .bottom >
-                                                            0
-                                                        ? 8 *
+                                                    decoration: BoxDecoration(
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          8),
+                                                      border: Border.all(
+                                                        color: Colors.purple,
+                                                        width: 1,
+                                                      ),
+                                                      color: Colors.white,
+                                                    ),
+                                                    child: Text(
+                                                      _value.isEmpty
+                                                          ? ""
+                                                          : _value[0],
+                                                      textAlign:
+                                                      TextAlign.center,
+                                                      style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                        FontWeight.w700,
+                                                        fontSize: 6 *
                                                             SizeConfig
-                                                                .blockSizeVertical
-                                                        : 16 *
-                                                            SizeConfig
-                                                                .blockSizeVertical,
-                                                    borderWidth: 2,
-                                                    shape:
-                                                        PinCodeFieldShape.box,
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            12),
-                                                    activeFillColor:
-                                                        Colors.white,
-                                                    inactiveFillColor:
-                                                        Colors.white,
-                                                    selectedColor:
-                                                        const Color(0xFF648C9C),
-                                                    activeColor:
-                                                        const Color(0xFF2B82AF),
-                                                    selectedFillColor:
-                                                        Colors.white,
-                                                    inactiveColor:
-                                                        const Color(0xFF2B82AF),
+                                                                .blockSizeHorizontal,
+                                                      ),
+                                                    ),
                                                   ),
-                                                  cursorColor:
-                                                      const Color(0xFF648C9C),
-                                                  animationDuration:
-                                                      const Duration(
-                                                          milliseconds: 300),
-                                                  enableActiveFill: true,
-                                                  errorAnimationController:
-                                                      null,
-                                                  controller: null,
-                                                  keyboardType:
-                                                      TextInputType.phone,
-                                                  onCompleted: (value) {
-                                                    if (value == "0000") {
-                                                      Navigator.pop(context);
-                                                      Navigator.push(
-                                                        context,
-                                                        MaterialPageRoute(
-                                                          builder: (context) =>
-                                                              VideoFolderTwo(
-                                                                  mainFolder: 2,
-                                                                  subFolder:
-                                                                      totalFolders[
-                                                                          index]),
-                                                        ),
-                                                      );
-                                                    } else {}
-                                                  },
-                                                  onChanged: (value) {},
-                                                  beforeTextPaste: (text) {
-                                                    return true;
-                                                  },
+                                                  Container(
+                                                    width: 7 *
+                                                        SizeConfig
+                                                            .blockSizeHorizontal,
+                                                    height: 14 *
+                                                        SizeConfig
+                                                            .blockSizeVertical,
+                                                    decoration: BoxDecoration(
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          8),
+                                                      border: Border.all(
+                                                        color: Colors.purple,
+                                                        width: 1,
+                                                      ),
+                                                      color: Colors.white,
+                                                    ),
+                                                    child: Text(
+                                                      (_value.isEmpty ||
+                                                          _value.length ==
+                                                              1)
+                                                          ? ""
+                                                          : _value[1],
+                                                      textAlign:
+                                                      TextAlign.center,
+                                                      style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                        FontWeight.w700,
+                                                        fontSize: 6 *
+                                                            SizeConfig
+                                                                .blockSizeHorizontal,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Container(
+                                                    width: 7 *
+                                                        SizeConfig
+                                                            .blockSizeHorizontal,
+                                                    height: 14 *
+                                                        SizeConfig
+                                                            .blockSizeVertical,
+                                                    decoration: BoxDecoration(
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          8),
+                                                      border: Border.all(
+                                                        color: Colors.purple,
+                                                        width: 1,
+                                                      ),
+                                                      color: Colors.white,
+                                                    ),
+                                                    child: Text(
+                                                      (_value.isEmpty ||
+                                                          _value.length ==
+                                                              1 ||
+                                                          _value.length ==
+                                                              2)
+                                                          ? ""
+                                                          : _value[2],
+                                                      textAlign:
+                                                      TextAlign.center,
+                                                      style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                        FontWeight.w700,
+                                                        fontSize: 6 *
+                                                            SizeConfig
+                                                                .blockSizeHorizontal,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Container(
+                                                    width: 7 *
+                                                        SizeConfig
+                                                            .blockSizeHorizontal,
+                                                    height: 14 *
+                                                        SizeConfig
+                                                            .blockSizeVertical,
+                                                    decoration: BoxDecoration(
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          8),
+                                                      border: Border.all(
+                                                        color: Colors.purple,
+                                                        width: 1,
+                                                      ),
+                                                      color: Colors.white,
+                                                    ),
+                                                    child: Text(
+                                                      (_value.isEmpty ||
+                                                          _value.length ==
+                                                              1 ||
+                                                          _value.length ==
+                                                              2 ||
+                                                          _value.length ==
+                                                              3)
+                                                          ? ""
+                                                          : _value[3],
+                                                      textAlign:
+                                                      TextAlign.center,
+                                                      style: TextStyle(
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                        FontWeight.w700,
+                                                        fontSize: 6 *
+                                                            SizeConfig
+                                                                .blockSizeHorizontal,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Container(),
+                                                  Container(),
+                                                  Container(),
+                                                ],
+                                              ),
+                                              SizedBox(
+                                                height: 5 *
+                                                    SizeConfig
+                                                        .blockSizeVertical,
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 15 *
+                                                        SizeConfig
+                                                            .blockSizeHorizontal),
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                      borderRadius:
+                                                      BorderRadius.circular(
+                                                          8),
+                                                      border: Border.all(
+                                                        color: Colors.purple,
+                                                        width: 1,
+                                                      ),
+                                                      color: Colors.white),
+                                                  child: VirtualKeyboard(
+                                                    height: 45 *
+                                                        SizeConfig
+                                                            .blockSizeVertical,
+                                                    type: VirtualKeyboardType
+                                                        .Numeric,
+                                                    onKeyPress: (key) {
+                                                      if (key.text == '') {
+                                                        setState(() {
+                                                          _value =
+                                                              _value.substring(
+                                                                  0,
+                                                                  _value.length -
+                                                                      1);
+                                                          debugPrint(_value);
+                                                        });
+                                                      }
+                                                      else {
+                                                        if (_value.length <=
+                                                            3) {
+                                                          setState(() {
+                                                            _value += key.text;
+                                                          });
+                                                        }
+                                                      }
+                                                      if (_value == "0000") {
+                                                        Navigator.pop(context);
+                                                        setState((){
+                                                          _value="";
+                                                        });
+                                                        Navigator.push(
+                                                          context,
+                                                          MaterialPageRoute(
+                                                            builder: (context) =>
+                                                                VideoFolderTwo(
+                                                                    mainFolder: 2,
+                                                                    subFolder:
+                                                                    totalFolders[
+                                                                    index]),
+                                                          ),
+                                                        );
+                                                      }
+                                                    },
+                                                  ),
                                                 ),
                                               ),
-                                            ),
+                                            ],
                                           ),
                                         ),
                                       );
                                     }),
                                   );
                                 },
-                              );
+                              ).whenComplete(() {
+                                setState(() {
+                                  _value="";
+                                });
+                              });
                             },
                             child: Image.asset(
                               "assets/SubFolders/subFolder.png",
