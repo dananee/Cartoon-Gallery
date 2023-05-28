@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:video_player/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import '../FullScreen-Video/FullScreen-video.dart';
+import '../FullScreen Assets/FullScreen-video.dart';
 import '../main.dart';
 
 class VideoFolderFour extends StatefulWidget {
@@ -64,6 +64,86 @@ class _VideoFolderFourState extends State<VideoFolderFour> {
       assetFolderNumber = "Folder4.11";
     } else if (mainFolderNumber == 4 && subFolderNumber == 12) {
       assetFolderNumber = "Folder4.12";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 13) {
+      assetFolderNumber = "Folder4.13";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 14) {
+      assetFolderNumber = "Folder4.14";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 15) {
+      assetFolderNumber = "Folder4.15";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 16) {
+      assetFolderNumber = "Folder4.16";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 17) {
+      assetFolderNumber = "Folder4.17";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 18) {
+      assetFolderNumber = "Folder4.18";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 19) {
+      assetFolderNumber = "Folder4.19";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 20) {
+      assetFolderNumber = "Folder4.20";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 21) {
+      assetFolderNumber = "Folder4.21";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 22) {
+      assetFolderNumber = "Folder4.22";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 23) {
+      assetFolderNumber = "Folder4.23";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 24) {
+      assetFolderNumber = "Folder4.24";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 25) {
+      assetFolderNumber = "Folder4.25";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 26) {
+      assetFolderNumber = "Folder4.26";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 27) {
+      assetFolderNumber = "Folder4.27";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 28) {
+      assetFolderNumber = "Folder4.28";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 29) {
+      assetFolderNumber = "Folder4.29";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 30) {
+      assetFolderNumber = "Folder4.30";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 31) {
+      assetFolderNumber = "Folder4.31";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 32) {
+      assetFolderNumber = "Folder4.32";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 33) {
+      assetFolderNumber = "Folder4.33";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 34) {
+      assetFolderNumber = "Folder4.34";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 35) {
+      assetFolderNumber = "Folder4.35";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 36) {
+      assetFolderNumber = "Folder4.36";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 37) {
+      assetFolderNumber = "Folder4.37";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 38) {
+      assetFolderNumber = "Folder4.38";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 39) {
+      assetFolderNumber = "Folder4.39";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 40) {
+      assetFolderNumber = "Folder4.40";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 41) {
+      assetFolderNumber = "Folder4.41";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 42) {
+      assetFolderNumber = "Folder4.42";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 43) {
+      assetFolderNumber = "Folder4.43";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 44) {
+      assetFolderNumber = "Folder4.44";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 45) {
+      assetFolderNumber = "Folder4.45";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 46) {
+      assetFolderNumber = "Folder4.46";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 47) {
+      assetFolderNumber = "Folder4.47";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 48) {
+      assetFolderNumber = "Folder4.48";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 49) {
+      assetFolderNumber = "Folder4.49";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 50) {
+      assetFolderNumber = "Folder4.50";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 51) {
+      assetFolderNumber = "Folder4.51";
+    } else if (mainFolderNumber == 4 && subFolderNumber == 52) {
+      assetFolderNumber = "Folder4.52";
     }
 
     final manifestContent = await rootBundle.loadString('AssetManifest.json');
@@ -110,17 +190,15 @@ class _VideoFolderFourState extends State<VideoFolderFour> {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig().init(context);
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
         body: Container(
           width: 100 * SizeConfig.blockSizeHorizontal,
-          height: 100*SizeConfig.blockSizeVertical,
+          height: 100 * SizeConfig.blockSizeVertical,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage(
-                  'assets/HomeScreen/main-bg.png'),
+              image: AssetImage('assets/HomeScreen/main-bg.png'),
               fit: BoxFit.cover,
             ),
           ),
@@ -172,11 +250,11 @@ class _VideoFolderFourState extends State<VideoFolderFour> {
                         width: 100 * SizeConfig.blockSizeHorizontal,
                         height: 75 * SizeConfig.blockSizeVertical,
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             SizedBox(
-                              height: 25 * SizeConfig.blockSizeVertical,
-                              width: 25 * SizeConfig.blockSizeVertical,
+                              height: 35 * SizeConfig.blockSizeVertical,
+                              width: 25 * SizeConfig.blockSizeHorizontal,
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(8),
                                 child: Image.asset(

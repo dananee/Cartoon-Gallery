@@ -50,6 +50,10 @@ dev_dependencies:
   chewie: ^1.4.0
   video_player: ^2.6.1
   virtual_keyboard_multi_language: ^1.0.3
+  path: 1.8.2
+  permission_handler: ^10.2.0
+  audioplayers: ^4.0.1
+  photo_view: ^0.14.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -63,26 +67,282 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/HomeScreen/folder.png
-    - assets/HomeScreen/folder1.png
-    - assets/HomeScreen/folder2.png
-    - assets/HomeScreen/folder3.png
-    - assets/HomeScreen/folder4.png
-    - assets/HomeScreen/password-bg.jpg
-    - assets/HomeScreen/main-bg.png
-    - assets/SubFolders/subFolder.png
+    - assets/HomeScreen/
+    - assets/MainFolder1_assets/
+    - assets/MainFolder1_assets/UnprotectedFolder_assets/
+    - assets/MainFolder1_assets/UnprotectedFolder_assets/Folder1/
+    - assets/MainFolder1_assets/UnprotectedFolder_assets/Folder2/
+    - assets/MainFolder1_assets/UnprotectedFolder_assets/Folder2/AllFolders/
+    - assets/MainFolder1_assets/UnprotectedFolder_assets/Folder2/Folder2.1/
+    - assets/MainFolder1_assets/UnprotectedFolder_assets/Folder2/Folder2.2/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video1_1/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video1_2/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video1_3/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_1_1/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_1_2/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_1_3/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_1_4/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_1_5/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_1_6/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_2_1/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_2_2/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_2_3/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_2_4/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_2_5/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_2_6/
+    - assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_3/
+    - assets/MainFolder2_assets/
+    - assets/MainFolder2_assets/UnprotectedFolder_assets/
+    - assets/MainFolder2_assets/UnprotectedFolder_assets/Folder1/
+    - assets/MainFolder2_assets/UnprotectedFolder_assets/Folder2/
+    - assets/MainFolder2_assets/UnprotectedFolder_assets/Folder1_2/
+    - assets/MainFolder2_assets/UnprotectedFolder_assets/Folder2_2/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1_1/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1_1_1/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1_2_1/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1_3/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1_4/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1_5/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1_5_1/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1_5_2/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video2_1_1_1/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video2_1_1_2/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video2_1_2/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video2_2_1/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video2_2_1_1/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video2_2_2/
+    - assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video2_3/
+    - assets/MainFolder3_assets/
+    - assets/MainFolder3_assets/UnprotectedFolder_assets/
+    - assets/MainFolder3_assets/UnprotectedFolder_assets/Folder1/
+    - assets/MainFolder3_assets/UnprotectedFolder_assets/Folder1_1/
+    - assets/MainFolder3_assets/UnprotectedFolder_assets/Folder1_2/
+    - assets/MainFolder3_assets/UnprotectedFolder_assets/Folder1_5/
+    - assets/MainFolder3_assets/UnprotectedFolder_assets/Folder2/
+    - assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_1/
+    - assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_1_1/
+    - assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_2/
+    - assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_3/
+    - assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_4/
+    - assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_5/
+    - assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_5_1/
+    - assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_6/
+    - assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video2/
     - assets/SubFolders/emptyfolder.png
+    - assets/subFolderImages/
     - assets/SubFolders/Folder1/
     - assets/SubFolders/Folder1/Folder1.1/
     - assets/SubFolders/Folder1/Folder1.2/
+    - assets/SubFolders/Folder1/Folder1.3/
+    - assets/SubFolders/Folder1/Folder1.4/
+    - assets/SubFolders/Folder1/Folder1.5/
+    - assets/SubFolders/Folder1/Folder1.6/
+    - assets/SubFolders/Folder1/Folder1.7/
+    - assets/SubFolders/Folder1/Folder1.8/
+    - assets/SubFolders/Folder1/Folder1.9/
+    - assets/SubFolders/Folder1/Folder1.10/
+    - assets/SubFolders/Folder1/Folder1.11/
+    - assets/SubFolders/Folder1/Folder1.12/
+    - assets/SubFolders/Folder1/Folder1.13/
+    - assets/SubFolders/Folder1/Folder1.14/
+    - assets/SubFolders/Folder1/Folder1.15/
+    - assets/SubFolders/Folder1/Folder1.16/
+    - assets/SubFolders/Folder1/Folder1.17/
+    - assets/SubFolders/Folder1/Folder1.18/
+    - assets/SubFolders/Folder1/Folder1.19/
+    - assets/SubFolders/Folder1/Folder1.20/
+    - assets/SubFolders/Folder1/Folder1.21/
+    - assets/SubFolders/Folder1/Folder1.22/
+    - assets/SubFolders/Folder1/Folder1.23/
+    - assets/SubFolders/Folder1/Folder1.24/
+    - assets/SubFolders/Folder1/Folder1.25/
+    - assets/SubFolders/Folder1/Folder1.26/
+    - assets/SubFolders/Folder1/Folder1.27/
+    - assets/SubFolders/Folder1/Folder1.28/
+    - assets/SubFolders/Folder1/Folder1.29/
+    - assets/SubFolders/Folder1/Folder1.30/
+    - assets/SubFolders/Folder1/Folder1.31/
+    - assets/SubFolders/Folder1/Folder1.32/
+    - assets/SubFolders/Folder1/Folder1.33/
+    - assets/SubFolders/Folder1/Folder1.34/
+    - assets/SubFolders/Folder1/Folder1.35/
+    - assets/SubFolders/Folder1/Folder1.36/
+    - assets/SubFolders/Folder1/Folder1.37/
+    - assets/SubFolders/Folder1/Folder1.38/
+    - assets/SubFolders/Folder1/Folder1.39/
+    - assets/SubFolders/Folder1/Folder1.40/
+    - assets/SubFolders/Folder1/Folder1.41/
+    - assets/SubFolders/Folder1/Folder1.42/
+    - assets/SubFolders/Folder1/Folder1.43/
+    - assets/SubFolders/Folder1/Folder1.44/
+    - assets/SubFolders/Folder1/Folder1.45/
+    - assets/SubFolders/Folder1/Folder1.46/
+    - assets/SubFolders/Folder1/Folder1.47/
+    - assets/SubFolders/Folder1/Folder1.48/
+    - assets/SubFolders/Folder1/Folder1.49/
+    - assets/SubFolders/Folder1/Folder1.50/
+    - assets/SubFolders/Folder1/Folder1.51/
+    - assets/SubFolders/Folder1/Folder1.52/
     - assets/SubFolders/Folder2/
     - assets/SubFolders/Folder2/Folder2.1/
     - assets/SubFolders/Folder2/Folder2.2/
+    - assets/SubFolders/Folder2/Folder2.3/
+    - assets/SubFolders/Folder2/Folder2.4/
+    - assets/SubFolders/Folder2/Folder2.5/
+    - assets/SubFolders/Folder2/Folder2.6/
+    - assets/SubFolders/Folder2/Folder2.7/
+    - assets/SubFolders/Folder2/Folder2.8/
+    - assets/SubFolders/Folder2/Folder2.9/
+    - assets/SubFolders/Folder2/Folder2.10/
+    - assets/SubFolders/Folder2/Folder2.11/
+    - assets/SubFolders/Folder2/Folder2.12/
+    - assets/SubFolders/Folder2/Folder2.13/
+    - assets/SubFolders/Folder2/Folder2.14/
+    - assets/SubFolders/Folder2/Folder2.15/
+    - assets/SubFolders/Folder2/Folder2.16/
+    - assets/SubFolders/Folder2/Folder2.17/
+    - assets/SubFolders/Folder2/Folder2.18/
+    - assets/SubFolders/Folder2/Folder2.19/
+    - assets/SubFolders/Folder2/Folder2.20/
+    - assets/SubFolders/Folder2/Folder2.21/
+    - assets/SubFolders/Folder2/Folder2.22/
+    - assets/SubFolders/Folder2/Folder2.23/
+    - assets/SubFolders/Folder2/Folder2.24/
+    - assets/SubFolders/Folder2/Folder2.25/
+    - assets/SubFolders/Folder2/Folder2.26/
+    - assets/SubFolders/Folder2/Folder2.27/
+    - assets/SubFolders/Folder2/Folder2.28/
+    - assets/SubFolders/Folder2/Folder2.29/
+    - assets/SubFolders/Folder2/Folder2.30/
+    - assets/SubFolders/Folder2/Folder2.31/
+    - assets/SubFolders/Folder2/Folder2.32/
+    - assets/SubFolders/Folder2/Folder2.33/
+    - assets/SubFolders/Folder2/Folder2.34/
+    - assets/SubFolders/Folder2/Folder2.35/
+    - assets/SubFolders/Folder2/Folder2.36/
+    - assets/SubFolders/Folder2/Folder2.37/
+    - assets/SubFolders/Folder2/Folder2.38/
+    - assets/SubFolders/Folder2/Folder2.39/
+    - assets/SubFolders/Folder2/Folder2.40/
+    - assets/SubFolders/Folder2/Folder2.41/
+    - assets/SubFolders/Folder2/Folder2.42/
+    - assets/SubFolders/Folder2/Folder2.43/
+    - assets/SubFolders/Folder2/Folder2.44/
+    - assets/SubFolders/Folder2/Folder2.45/
+    - assets/SubFolders/Folder2/Folder2.46/
+    - assets/SubFolders/Folder2/Folder2.47/
+    - assets/SubFolders/Folder2/Folder2.48/
+    - assets/SubFolders/Folder2/Folder2.49/
+    - assets/SubFolders/Folder2/Folder2.50/
+    - assets/SubFolders/Folder2/Folder2.51/
+    - assets/SubFolders/Folder2/Folder2.52/
     - assets/SubFolders/Folder3/
     - assets/SubFolders/Folder3/Folder3.1/
     - assets/SubFolders/Folder3/Folder3.2/
+    - assets/SubFolders/Folder3/Folder3.3/
+    - assets/SubFolders/Folder3/Folder3.4/
+    - assets/SubFolders/Folder3/Folder3.5/
+    - assets/SubFolders/Folder3/Folder3.6/
+    - assets/SubFolders/Folder3/Folder3.7/
+    - assets/SubFolders/Folder3/Folder3.8/
+    - assets/SubFolders/Folder3/Folder3.9/
+    - assets/SubFolders/Folder3/Folder3.10/
+    - assets/SubFolders/Folder3/Folder3.11/
+    - assets/SubFolders/Folder3/Folder3.12/
+    - assets/SubFolders/Folder3/Folder3.13/
+    - assets/SubFolders/Folder3/Folder3.14/
+    - assets/SubFolders/Folder3/Folder3.15/
+    - assets/SubFolders/Folder3/Folder3.16/
+    - assets/SubFolders/Folder3/Folder3.17/
+    - assets/SubFolders/Folder3/Folder3.18/
+    - assets/SubFolders/Folder3/Folder3.19/
+    - assets/SubFolders/Folder3/Folder3.20/
+    - assets/SubFolders/Folder3/Folder3.21/
+    - assets/SubFolders/Folder3/Folder3.22/
+    - assets/SubFolders/Folder3/Folder3.23/
+    - assets/SubFolders/Folder3/Folder3.24/
+    - assets/SubFolders/Folder3/Folder3.25/
+    - assets/SubFolders/Folder3/Folder3.26/
+    - assets/SubFolders/Folder3/Folder3.27/
+    - assets/SubFolders/Folder3/Folder3.28/
+    - assets/SubFolders/Folder3/Folder3.29/
+    - assets/SubFolders/Folder3/Folder3.30/
+    - assets/SubFolders/Folder3/Folder3.31/
+    - assets/SubFolders/Folder3/Folder3.32/
+    - assets/SubFolders/Folder3/Folder3.33/
+    - assets/SubFolders/Folder3/Folder3.34/
+    - assets/SubFolders/Folder3/Folder3.35/
+    - assets/SubFolders/Folder3/Folder3.36/
+    - assets/SubFolders/Folder3/Folder3.37/
+    - assets/SubFolders/Folder3/Folder3.38/
+    - assets/SubFolders/Folder3/Folder3.39/
+    - assets/SubFolders/Folder3/Folder3.40/
+    - assets/SubFolders/Folder3/Folder3.41/
+    - assets/SubFolders/Folder3/Folder3.42/
+    - assets/SubFolders/Folder3/Folder3.43/
+    - assets/SubFolders/Folder3/Folder3.44/
+    - assets/SubFolders/Folder3/Folder3.45/
+    - assets/SubFolders/Folder3/Folder3.46/
+    - assets/SubFolders/Folder3/Folder3.47/
+    - assets/SubFolders/Folder3/Folder3.48/
+    - assets/SubFolders/Folder3/Folder3.49/
+    - assets/SubFolders/Folder3/Folder3.50/
+    - assets/SubFolders/Folder3/Folder3.51/
+    - assets/SubFolders/Folder3/Folder3.52/
     - assets/SubFolders/Folder4/
     - assets/SubFolders/Folder4/Folder4.1/
+    - assets/SubFolders/Folder4/Folder4.2/
+    - assets/SubFolders/Folder4/Folder4.3/
+    - assets/SubFolders/Folder4/Folder4.4/
+    - assets/SubFolders/Folder4/Folder4.5/
+    - assets/SubFolders/Folder4/Folder4.6/
+    - assets/SubFolders/Folder4/Folder4.7/
+    - assets/SubFolders/Folder4/Folder4.8/
+    - assets/SubFolders/Folder4/Folder4.9/
+    - assets/SubFolders/Folder4/Folder4.10/
+    - assets/SubFolders/Folder4/Folder4.11/
+    - assets/SubFolders/Folder4/Folder4.12/
+    - assets/SubFolders/Folder4/Folder4.13/
+    - assets/SubFolders/Folder4/Folder4.14/
+    - assets/SubFolders/Folder4/Folder4.15/
+    - assets/SubFolders/Folder4/Folder4.16/
+    - assets/SubFolders/Folder4/Folder4.17/
+    - assets/SubFolders/Folder4/Folder4.18/
+    - assets/SubFolders/Folder4/Folder4.19/
+    - assets/SubFolders/Folder4/Folder4.20/
+    - assets/SubFolders/Folder4/Folder4.21/
+    - assets/SubFolders/Folder4/Folder4.22/
+    - assets/SubFolders/Folder4/Folder4.23/
+    - assets/SubFolders/Folder4/Folder4.24/
+    - assets/SubFolders/Folder4/Folder4.25/
+    - assets/SubFolders/Folder4/Folder4.26/
+    - assets/SubFolders/Folder4/Folder4.27/
+    - assets/SubFolders/Folder4/Folder4.28/
+    - assets/SubFolders/Folder4/Folder4.29/
+    - assets/SubFolders/Folder4/Folder4.30/
+    - assets/SubFolders/Folder4/Folder4.31/
+    - assets/SubFolders/Folder4/Folder4.32/
+    - assets/SubFolders/Folder4/Folder4.33/
+    - assets/SubFolders/Folder4/Folder4.34/
+    - assets/SubFolders/Folder4/Folder4.35/
+    - assets/SubFolders/Folder4/Folder4.36/
+    - assets/SubFolders/Folder4/Folder4.37/
+    - assets/SubFolders/Folder4/Folder4.38/
+    - assets/SubFolders/Folder4/Folder4.39/
+    - assets/SubFolders/Folder4/Folder4.40/
+    - assets/SubFolders/Folder4/Folder4.41/
+    - assets/SubFolders/Folder4/Folder4.42/
+    - assets/SubFolders/Folder4/Folder4.43/
+    - assets/SubFolders/Folder4/Folder4.44/
+    - assets/SubFolders/Folder4/Folder4.45/
+    - assets/SubFolders/Folder4/Folder4.46/
+    - assets/SubFolders/Folder4/Folder4.47/
+    - assets/SubFolders/Folder4/Folder4.48/
+    - assets/SubFolders/Folder4/Folder4.49/
+    - assets/SubFolders/Folder4/Folder4.50/
+    - assets/SubFolders/Folder4/Folder4.51/
+    - assets/SubFolders/Folder4/Folder4.52/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
@@ -94,14 +354,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: fontRegular
-      fonts:
-        - asset: assets/fonts/Inter-Regular.ttf
-
-    - family: fontHeading
-      fonts:
-        - asset: assets/fonts/Inter-Bold.ttf
+#  fonts:
+#    - family: fontRegular
+#      fonts:
+#        - asset: assets/fonts/Inter-Regular.ttf
+#
+#    - family: fontHeading
+#      fonts:
+#        - asset: assets/fonts/Inter-Bold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

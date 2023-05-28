@@ -1,8 +1,12 @@
 // ignore_for_file: depend_on_referenced_packages
 
-import 'package:cartoon_gallery/Landing%20Screen/HomeScreen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'MainFolders/MainFolders.dart';
+
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -12,7 +16,7 @@ Future<void> main() async {
   runApp(
     const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: MainFolders(),
     ),
   );
 }
