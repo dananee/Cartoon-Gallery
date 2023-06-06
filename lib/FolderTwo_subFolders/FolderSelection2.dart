@@ -1,4 +1,3 @@
-
 import 'package:cartoon_gallery/FolderTwo_subFolders/Protected/Protected_FolderTwo.dart';
 import 'package:flutter/material.dart';
 import '../main.dart';
@@ -74,12 +73,12 @@ class _FolderSelectionTwoState extends State<FolderSelectionTwo> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder2_assets/protected-mainFolder2.png"),
+                                "assets/Folder for icon 2/52 password protected folders/Future brain computation lessons.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
                       ),
-                      SizedBox(width: 2.5*SizeConfig.blockSizeHorizontal),
+                      SizedBox(width: 2.5 * SizeConfig.blockSizeHorizontal),
                       SizedBox(
                         width: 21.5 * SizeConfig.blockSizeHorizontal,
                         child: GestureDetector(
@@ -93,8 +92,8 @@ class _FolderSelectionTwoState extends State<FolderSelectionTwo> {
                             );
                           },
                           child: const Image(
-                            image: AssetImage(
-                                "assets/MainFolder2_assets/unprotected-mainFolder2.png"),
+                            image:
+                                AssetImage("assets/HomeScreen/mainfolder2.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

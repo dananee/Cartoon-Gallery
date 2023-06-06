@@ -35,7 +35,8 @@ class _ProtectedFolderOneState extends State<ProtectedFolderOne> {
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
 
     final assets = manifestMap.keys
-        .where((String key) => key.startsWith('assets/subFolderImages/'))
+        .where((String key) => key.startsWith(
+            'assets/Folder for icon 1/52 Password protected folders/'))
         .toList();
     setState(() {
       allImagesPath = assets;
@@ -105,7 +106,6 @@ class _ProtectedFolderOneState extends State<ProtectedFolderOne> {
                                       scrollDirection: Axis.horizontal,
                                       itemBuilder: (context, index) {
                                         return SizedBox(
-
                                           child: GestureDetector(
                                             onTap: () {
                                               showModalBottomSheet(

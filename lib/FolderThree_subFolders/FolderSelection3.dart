@@ -73,8 +73,8 @@ class _FolderSelectionThreeState extends State<FolderSelectionThree> {
                             );
                           },
                           child: const Image(
-                            image: AssetImage(
-                                "assets/MainFolder3_assets/unprotected-mainfolder3.png"),
+                            image:
+                                AssetImage("assets/HomeScreen/mainfolder3.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -93,8 +93,8 @@ class _FolderSelectionThreeState extends State<FolderSelectionThree> {
                             );
                           },
                           child: const Image(
-                            image: AssetImage(
-                                "assets/MainFolder3_assets/protected-mainfolder3.png"),
+                            image:
+                                AssetImage("assets/HomeScreen/mainfolder3.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

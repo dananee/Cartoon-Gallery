@@ -75,7 +75,7 @@ class _UnprotectedFolderSelectionState
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder1_assets/UnprotectedFolder_assets/unprotectedsubFolder1.png"),
+                                "assets/Folder for icon 1/Folder 1/1. Reality Express Introduction/Picture25.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -97,7 +97,7 @@ class _UnprotectedFolderSelectionState
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder1_assets/UnprotectedFolder_assets/unprotectedsubFolder2.png"),
+                                "assets/Folder for icon 1/Folder 1/2. Biology Foundation/icon periodic table.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

@@ -35,10 +35,12 @@ class _ProtectedFolderTwoState extends State<ProtectedFolderTwo> {
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
 
     final assets = manifestMap.keys
-        .where((String key) => key.startsWith('assets/subFolderImages/'))
+        .where((String key) => key.startsWith(
+            'assets/Folder for icon 2/52 password protected folders/'))
         .toList();
     setState(() {
       allImagesPath = assets;
+      print('Length- ${assets.length}');
     });
     return allImagesPath;
   }
@@ -64,7 +66,7 @@ class _ProtectedFolderTwoState extends State<ProtectedFolderTwo> {
                 SizedBox(height: 5 * SizeConfig.blockSizeVertical),
                 Container(
                   padding:
-                  EdgeInsets.only(left: 5 * SizeConfig.blockSizeHorizontal),
+                      EdgeInsets.only(left: 5 * SizeConfig.blockSizeHorizontal),
                   width: 100 * SizeConfig.blockSizeHorizontal,
                   height: 15 * SizeConfig.blockSizeVertical,
                   child: Row(

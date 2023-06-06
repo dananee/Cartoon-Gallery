@@ -80,7 +80,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder2_assets/UnprotectedFolder_assets/Folder2_2/subfolder2_2_1-icon.png"),
+                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/1. adults/Picture18.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -99,7 +99,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder2_assets/UnprotectedFolder_assets/Folder2_2/subfolder2_2_2-icon.png"),
+                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/1. Children/Picture20.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -113,13 +113,13 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                               MaterialPageRoute(
                                 builder: (context) => FullScreenImageViewer(
                                     imagePath:
-                                        "assets/MainFolder2_assets/UnprotectedFolder_assets/Folder2_2/subfolder2_2_3.png"),
+                                        "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/Icon option 1.png"),
                               ),
                             );
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder2_assets/UnprotectedFolder_assets/Folder2_2/subfolder2_2_3.png"),
+                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/Icon option 1.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

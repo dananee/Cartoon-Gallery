@@ -41,117 +41,117 @@ class _ProtectedVideosFolderOneState extends State<ProtectedVideosFolderOne> {
 
   loadVideos() async {
     if (mainFolderNumber == 1 && subFolderNumber == 1) {
-      assetFolderNumber = "Folder1.1";
+      assetFolderNumber = "1";
     } else if (mainFolderNumber == 1 && subFolderNumber == 2) {
-      assetFolderNumber = "Folder1.2";
+      assetFolderNumber = "2";
     } else if (mainFolderNumber == 1 && subFolderNumber == 3) {
-      assetFolderNumber = "Folder1.3";
+      assetFolderNumber = "3";
     } else if (mainFolderNumber == 1 && subFolderNumber == 4) {
-      assetFolderNumber = "Folder1.4";
+      assetFolderNumber = "4";
     } else if (mainFolderNumber == 1 && subFolderNumber == 5) {
-      assetFolderNumber = "Folder1.5";
+      assetFolderNumber = "5";
     } else if (mainFolderNumber == 1 && subFolderNumber == 6) {
-      assetFolderNumber = "Folder1.6";
+      assetFolderNumber = "6";
     } else if (mainFolderNumber == 1 && subFolderNumber == 7) {
-      assetFolderNumber = "Folder1.7";
+      assetFolderNumber = "7";
     } else if (mainFolderNumber == 1 && subFolderNumber == 8) {
-      assetFolderNumber = "Folder1.8";
+      assetFolderNumber = "8";
     } else if (mainFolderNumber == 1 && subFolderNumber == 9) {
-      assetFolderNumber = "Folder1.9";
+      assetFolderNumber = "9";
     } else if (mainFolderNumber == 1 && subFolderNumber == 10) {
-      assetFolderNumber = "Folder1.10";
+      assetFolderNumber = "10";
     } else if (mainFolderNumber == 1 && subFolderNumber == 11) {
-      assetFolderNumber = "Folder1.11";
+      assetFolderNumber = "11";
     } else if (mainFolderNumber == 1 && subFolderNumber == 12) {
-      assetFolderNumber = "Folder1.12";
+      assetFolderNumber = "12";
     } else if (mainFolderNumber == 1 && subFolderNumber == 13) {
-      assetFolderNumber = "Folder1.13";
+      assetFolderNumber = "13";
     } else if (mainFolderNumber == 1 && subFolderNumber == 14) {
-      assetFolderNumber = "Folder1.14";
+      assetFolderNumber = "14";
     } else if (mainFolderNumber == 1 && subFolderNumber == 15) {
-      assetFolderNumber = "Folder1.15";
+      assetFolderNumber = "15";
     } else if (mainFolderNumber == 1 && subFolderNumber == 16) {
-      assetFolderNumber = "Folder1.16";
+      assetFolderNumber = "16";
     } else if (mainFolderNumber == 1 && subFolderNumber == 17) {
-      assetFolderNumber = "Folder1.17";
+      assetFolderNumber = "17";
     } else if (mainFolderNumber == 1 && subFolderNumber == 18) {
-      assetFolderNumber = "Folder1.18";
+      assetFolderNumber = "18";
     } else if (mainFolderNumber == 1 && subFolderNumber == 19) {
-      assetFolderNumber = "Folder1.19";
+      assetFolderNumber = "19";
     } else if (mainFolderNumber == 1 && subFolderNumber == 20) {
-      assetFolderNumber = "Folder1.20";
+      assetFolderNumber = "20";
     } else if (mainFolderNumber == 1 && subFolderNumber == 21) {
-      assetFolderNumber = "Folder1.21";
+      assetFolderNumber = "21";
     } else if (mainFolderNumber == 1 && subFolderNumber == 22) {
-      assetFolderNumber = "Folder1.22";
+      assetFolderNumber = "22";
     } else if (mainFolderNumber == 1 && subFolderNumber == 23) {
-      assetFolderNumber = "Folder1.23";
+      assetFolderNumber = "23";
     } else if (mainFolderNumber == 1 && subFolderNumber == 24) {
-      assetFolderNumber = "Folder1.24";
+      assetFolderNumber = "24";
     } else if (mainFolderNumber == 1 && subFolderNumber == 25) {
-      assetFolderNumber = "Folder1.25";
+      assetFolderNumber = "25";
     } else if (mainFolderNumber == 1 && subFolderNumber == 26) {
-      assetFolderNumber = "Folder1.26";
+      assetFolderNumber = "26";
     } else if (mainFolderNumber == 1 && subFolderNumber == 27) {
-      assetFolderNumber = "Folder1.27";
+      assetFolderNumber = "27";
     } else if (mainFolderNumber == 1 && subFolderNumber == 28) {
-      assetFolderNumber = "Folder1.28";
+      assetFolderNumber = "28";
     } else if (mainFolderNumber == 1 && subFolderNumber == 29) {
-      assetFolderNumber = "Folder1.29";
+      assetFolderNumber = "29";
     } else if (mainFolderNumber == 1 && subFolderNumber == 30) {
-      assetFolderNumber = "Folder1.30";
+      assetFolderNumber = "30";
     } else if (mainFolderNumber == 1 && subFolderNumber == 31) {
-      assetFolderNumber = "Folder1.31";
+      assetFolderNumber = "31";
     } else if (mainFolderNumber == 1 && subFolderNumber == 32) {
-      assetFolderNumber = "Folder1.32";
+      assetFolderNumber = "32";
     } else if (mainFolderNumber == 1 && subFolderNumber == 33) {
-      assetFolderNumber = "Folder1.33";
+      assetFolderNumber = "33";
     } else if (mainFolderNumber == 1 && subFolderNumber == 34) {
-      assetFolderNumber = "Folder1.34";
+      assetFolderNumber = "34";
     } else if (mainFolderNumber == 1 && subFolderNumber == 35) {
-      assetFolderNumber = "Folder1.35";
+      assetFolderNumber = "35";
     } else if (mainFolderNumber == 1 && subFolderNumber == 36) {
-      assetFolderNumber = "Folder1.36";
+      assetFolderNumber = "36";
     } else if (mainFolderNumber == 1 && subFolderNumber == 37) {
-      assetFolderNumber = "Folder1.37";
+      assetFolderNumber = "37";
     } else if (mainFolderNumber == 1 && subFolderNumber == 38) {
-      assetFolderNumber = "Folder1.38";
+      assetFolderNumber = "38";
     } else if (mainFolderNumber == 1 && subFolderNumber == 39) {
-      assetFolderNumber = "Folder1.39";
+      assetFolderNumber = "39";
     } else if (mainFolderNumber == 1 && subFolderNumber == 40) {
-      assetFolderNumber = "Folder1.40";
+      assetFolderNumber = "40";
     } else if (mainFolderNumber == 1 && subFolderNumber == 41) {
-      assetFolderNumber = "Folder1.41";
+      assetFolderNumber = "41";
     } else if (mainFolderNumber == 1 && subFolderNumber == 42) {
-      assetFolderNumber = "Folder1.42";
+      assetFolderNumber = "42";
     } else if (mainFolderNumber == 1 && subFolderNumber == 43) {
-      assetFolderNumber = "Folder1.43";
+      assetFolderNumber = "43";
     } else if (mainFolderNumber == 1 && subFolderNumber == 44) {
-      assetFolderNumber = "Folder1.44";
+      assetFolderNumber = "44";
     } else if (mainFolderNumber == 1 && subFolderNumber == 45) {
-      assetFolderNumber = "Folder1.45";
+      assetFolderNumber = "45";
     } else if (mainFolderNumber == 1 && subFolderNumber == 46) {
-      assetFolderNumber = "Folder1.46";
+      assetFolderNumber = "46";
     } else if (mainFolderNumber == 1 && subFolderNumber == 47) {
-      assetFolderNumber = "Folder1.47";
+      assetFolderNumber = "47";
     } else if (mainFolderNumber == 1 && subFolderNumber == 48) {
-      assetFolderNumber = "Folder1.48";
+      assetFolderNumber = "48";
     } else if (mainFolderNumber == 1 && subFolderNumber == 49) {
-      assetFolderNumber = "Folder1.49";
+      assetFolderNumber = "49";
     } else if (mainFolderNumber == 1 && subFolderNumber == 50) {
-      assetFolderNumber = "Folder1.50";
+      assetFolderNumber = "50";
     } else if (mainFolderNumber == 1 && subFolderNumber == 51) {
-      assetFolderNumber = "Folder1.51";
+      assetFolderNumber = "51";
     } else if (mainFolderNumber == 1 && subFolderNumber == 52) {
-      assetFolderNumber = "Folder1.52";
+      assetFolderNumber = "52";
     }
 
     final manifestContent = await rootBundle.loadString('AssetManifest.json');
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
 
     final assets = manifestMap.keys
-        .where((String key) =>
-            key.startsWith('assets/SubFolders/Folder1/$assetFolderNumber/'))
+        .where(
+            (String key) => key.startsWith('assets/Folder1/$assetFolderNumber'))
         .toList();
     setState(() {
       assetsPath = assets;

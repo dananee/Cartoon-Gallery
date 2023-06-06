@@ -75,7 +75,8 @@ class _UnprotectedFolderSelectionState
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder3_assets/UnprotectedFolder_assets/unprotectedsubFolder1.png"),
+                              "assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/icon.png",
+                            ),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -97,7 +98,7 @@ class _UnprotectedFolderSelectionState
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder3_assets/UnprotectedFolder_assets/unprotectedsubFolder2.png"),
+                                "assets/Folder 3/Completed lessons icon 3. No password required/Level 2 - emotion/Icon emotion level 2.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

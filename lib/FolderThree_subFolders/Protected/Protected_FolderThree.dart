@@ -35,7 +35,8 @@ class _ProtectedFolderThreeState extends State<ProtectedFolderThree> {
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
 
     final assets = manifestMap.keys
-        .where((String key) => key.startsWith('assets/subFolderImages/'))
+        .where((String key) =>
+            key.startsWith('assets/Folder 3/52 password protected folders/'))
         .toList();
     setState(() {
       allImagesPath = assets;

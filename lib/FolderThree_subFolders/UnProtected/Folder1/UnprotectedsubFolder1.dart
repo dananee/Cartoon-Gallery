@@ -38,7 +38,7 @@ class _UnprotectedsubFolder1State extends State<UnprotectedsubFolder1> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/MainFolder3_assets/UnprotectedFolder_assets/Folder1/'))
+            'assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/icon/icon'))
         .toList();
     setState(() {
       allImagesPath = assets;
@@ -157,7 +157,7 @@ class _UnprotectedsubFolder1State extends State<UnprotectedsubFolder1> {
                                                   context,
                                                   MaterialPageRoute(
                                                     builder: (context) =>
-                                                    const UnprotectedSubFolder1_5(),
+                                                        const UnprotectedSubFolder1_5(),
                                                   ),
                                                 );
                                               } else if (index == 5) {

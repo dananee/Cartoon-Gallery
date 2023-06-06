@@ -74,7 +74,7 @@ class _FolderSelectionOneState extends State<FolderSelectionOne> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder1_assets/protected-mainfolder1.png"),
+                                "assets/Folder for icon 1/52 Password protected folders/Future Train engine lessons icon.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -92,8 +92,8 @@ class _FolderSelectionOneState extends State<FolderSelectionOne> {
                             );
                           },
                           child: const Image(
-                            image: AssetImage(
-                                "assets/MainFolder1_assets/unprotected-mainfolder1.png"),
+                            image:
+                                AssetImage("assets/HomeScreen/mainfolder1.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

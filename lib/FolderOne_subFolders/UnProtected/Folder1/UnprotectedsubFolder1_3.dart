@@ -38,7 +38,7 @@ class _UnprotectedsubFolder1_3State extends State<UnprotectedsubFolder1_3> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video1_3/'))
+            'assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/1. child atom/'))
         .toList();
     setState(() {
       videoPath = assets;
@@ -48,11 +48,13 @@ class _UnprotectedsubFolder1_3State extends State<UnprotectedsubFolder1_3> {
   }
 
   loadVideoPlayer() async {
-    for (var element in videoPath) {
+    for (String element in videoPath) {
+      print('VIDERO Path ${element}');
       controllersList.add(VideoPlayerController.asset(element));
     }
     for (var controller in controllersList) {
       await controller.initialize().then((_) {
+        videoAdded = true;
         setState(() {});
       });
     }
