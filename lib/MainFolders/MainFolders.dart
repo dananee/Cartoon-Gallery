@@ -21,6 +21,7 @@ class _MainFoldersState extends State<MainFolders> {
 
   @override
   void initState() {
+    requestPermission();
     super.initState();
   }
 

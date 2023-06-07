@@ -25,21 +25,27 @@ class _FullScreenVideoState extends State<FullScreenVideo> {
 
   @override
   initState() {
-    videoPath = widget.videoUrl;
-    _videoPlayerController = VideoPlayerController.asset(videoPath);
-    _chewieController = ChewieController(
-      allowedScreenSleep: false,
-      allowFullScreen: false,
-      deviceOrientationsAfterFullScreen: [
-        DeviceOrientation.landscapeLeft,
-        DeviceOrientation.landscapeRight
-      ],
-      videoPlayerController: _videoPlayerController,
-      aspectRatio: _aspectRatio,
-      autoInitialize: true,
-      autoPlay: true,
-      showControls: true,
-    );
+    videoPath = Uri.decodeFull(widget.videoUrl);
+    print('PATH $videoPath');
+    try {
+      _videoPlayerController = VideoPlayerController.asset(videoPath);
+      _chewieController = ChewieController(
+        allowedScreenSleep: false,
+        allowFullScreen: false,
+        deviceOrientationsAfterFullScreen: [
+          DeviceOrientation.landscapeLeft,
+          DeviceOrientation.landscapeRight
+        ],
+        videoPlayerController: _videoPlayerController,
+        aspectRatio: _aspectRatio,
+        autoInitialize: true,
+        autoPlay: true,
+        showControls: true,
+      );
+    } catch (e) {
+      debugPrint("Error : Full video player controller $e");
+    }
+
     _chewieController.addListener(() {
       if (_chewieController.isFullScreen) {
         SystemChrome.setPreferredOrientations([

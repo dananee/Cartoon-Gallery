@@ -28,7 +28,7 @@ class _UnprotectedSubFolder1State extends State<UnprotectedSubFolder1> {
   @override
   void initState() {
     controller = VideoPlayerController.asset(
-        "assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1/video1.mp4");
+        "assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/2. Castle game/2. game instructions.mp4");
     controller.initialize();
     setState(() {
       allImagesPath = [];

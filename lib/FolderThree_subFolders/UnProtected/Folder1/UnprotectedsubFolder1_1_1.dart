@@ -1,6 +1,7 @@
 // ignore_for_file: camel_case_types, depend_on_referenced_packages
 
 import 'dart:convert';
+import 'dart:io';
 import 'package:cartoon_gallery/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -38,7 +39,7 @@ class _UnprotectedSubFolder1_1_1State extends State<UnprotectedSubFolder1_1_1> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-        'assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_1_1/'))
+            'assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/1. Fear/'))
         .toList();
     setState(() {
       videoPath = assets;
@@ -49,7 +50,7 @@ class _UnprotectedSubFolder1_1_1State extends State<UnprotectedSubFolder1_1_1> {
 
   loadVideoPlayer() async {
     for (var element in videoPath) {
-      controllersList.add(VideoPlayerController.asset(element));
+      controllersList.add(VideoPlayerController.file(File(element)));
     }
     for (var controller in controllersList) {
       await controller.initialize().then((_) {
@@ -71,6 +72,7 @@ class _UnprotectedSubFolder1_1_1State extends State<UnprotectedSubFolder1_1_1> {
       controller.dispose();
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

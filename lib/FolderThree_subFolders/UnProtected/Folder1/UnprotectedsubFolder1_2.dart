@@ -33,10 +33,10 @@ class _UnprotectedSubFolder1_2State extends State<UnprotectedSubFolder1_2> {
     });
 
     controller1 = VideoPlayerController.asset(
-        "assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_2/video1.mp4");
+        "assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/2. Castle game/1.Game intro.mp4");
     controller1.initialize();
     controller2 = VideoPlayerController.asset(
-        "assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_2/video2.mp4");
+        "assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/2. Castle game/2. game instructions.mp4");
     controller2.initialize();
     setState(() {
       videoAdded = true;
@@ -50,7 +50,7 @@ class _UnprotectedSubFolder1_2State extends State<UnprotectedSubFolder1_2> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/MainFolder3_assets/UnprotectedFolder_assets/Folder1_2/'))
+            'assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/2. Castle game/'))
         .toList();
     setState(() {
       allImagesPath = assets;
@@ -141,7 +141,7 @@ class _UnprotectedSubFolder1_2State extends State<UnprotectedSubFolder1_2> {
                                                             builder: (context) =>
                                                                 FullScreenVideo(
                                                                     videoUrl:
-                                                                        "assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_2/video1.mp4"),
+                                                                        "assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/2. Castle game/1.Game intro.mp4"),
                                                           ),
                                                         );
                                                       },
@@ -172,7 +172,7 @@ class _UnprotectedSubFolder1_2State extends State<UnprotectedSubFolder1_2> {
                                                             builder: (context) =>
                                                                 FullScreenVideo(
                                                                     videoUrl:
-                                                                        "assets/MainFolder3_assets/Unprotected-Videos/Unprotected-video1_2/video1.mp4"),
+                                                                        "assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/2. Castle game/2. game instructions.mp4"),
                                                           ),
                                                         );
                                                       },
