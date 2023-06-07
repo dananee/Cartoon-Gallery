@@ -137,7 +137,7 @@ class _UnprotectedSubFolder1_1State extends State<UnprotectedSubFolder1_1> {
                                                             builder: (context) =>
                                                                 FullScreenVideo(
                                                                     videoUrl:
-                                                                        "assets/videos1/videos 2/videos 2/2Fear.mp4"),
+                                                                        "assets/videos1/videos2/videos2/2Fear.mp4"),
                                                           ),
                                                         );
                                                       },
