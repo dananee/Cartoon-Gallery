@@ -36,7 +36,7 @@ class _ProtectedFolderOneState extends State<ProtectedFolderOne> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/Folder for icon 1/52 Password protected folders/'))
+            'assets/Folder_for_icon_1/52_Password_protected_folders/'))
         .toList();
     setState(() {
       allImagesPath = assets;

@@ -34,7 +34,7 @@ class _UnprotectedSubFolder1_2State extends State<UnprotectedSubFolder1_2> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/MainFolder2_assets/UnprotectedFolder_assets/Folder1_2/'))
+            'assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/2.car_alarm_game/'))
         .toList();
     setState(() {
       allImagesPath = assets;

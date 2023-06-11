@@ -38,7 +38,7 @@ class _UnprotectedSubFolder1_3State extends State<UnprotectedSubFolder1_3> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-        'assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/3. Purpose of emotion/'))
+            'assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/3_Purpose_of_emotion/'))
         .toList();
     setState(() {
       videoPath = assets;
@@ -71,6 +71,7 @@ class _UnprotectedSubFolder1_3State extends State<UnprotectedSubFolder1_3> {
       controller.dispose();
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

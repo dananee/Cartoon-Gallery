@@ -75,7 +75,7 @@ class _UnprotectedFolderSelectionState
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/Picture1.png"),
+                                "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/Picture1.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -97,7 +97,7 @@ class _UnprotectedFolderSelectionState
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/Picture11.png"),
+                                "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/Picture11.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

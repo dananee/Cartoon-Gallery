@@ -32,10 +32,10 @@ class _UnprotectedSubFolder1_1State extends State<UnprotectedSubFolder1_1> {
       imagesFetched = loadImages();
     });
     controller1 = VideoPlayerController.asset(
-        "assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/1. Fear/Fearintro.mp4");
+        "assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/1_Fear/1_Fear_intro.mp4");
     controller1.initialize();
     controller2 = VideoPlayerController.asset(
-        "assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/1. Fear/2Fear1.mp4");
+        "assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/1_Fear/2_Fear_1.mp4");
     controller2.initialize();
     super.initState();
   }
@@ -46,11 +46,12 @@ class _UnprotectedSubFolder1_1State extends State<UnprotectedSubFolder1_1> {
         json.decode(manifestContent.replaceAll('%20', ' '));
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/1. Fear/'))
+            'assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/1_Fear/'))
         .toList();
     setState(() {
       allImagesPath = assets;
     });
+    allImagesPath.removeWhere((element) => element.contains(".mp4"));
     return allImagesPath;
   }
 

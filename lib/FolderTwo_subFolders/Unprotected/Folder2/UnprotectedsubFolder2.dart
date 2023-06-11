@@ -74,7 +74,7 @@ class _UnprotectedSubFolder2State extends State<UnprotectedSubFolder2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/1. Intro to perception/Picture12.png"),
+                                "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/icon/icon1.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -93,7 +93,7 @@ class _UnprotectedSubFolder2State extends State<UnprotectedSubFolder2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/Picture21.png"),
+                                "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/icon/icon2.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -112,7 +112,7 @@ class _UnprotectedSubFolder2State extends State<UnprotectedSubFolder2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/3. Art lesson 1/icon.png"),
+                                "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/icon/icon3.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

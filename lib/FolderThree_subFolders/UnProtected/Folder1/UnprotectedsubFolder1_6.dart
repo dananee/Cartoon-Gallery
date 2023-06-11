@@ -39,7 +39,7 @@ class _UnprotectedSubFolder1_6State extends State<UnprotectedSubFolder1_6> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/Folder 3/Completed lessons icon 3. No password required/5. Neurotransmitters/6. Begin happy journaling/'))
+            'assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/6_Begin_happy_journaling/'))
         .toList();
     setState(() {
       videoPath = assets;

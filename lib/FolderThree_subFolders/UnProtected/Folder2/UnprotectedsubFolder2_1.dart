@@ -76,7 +76,8 @@ class _UnprotectedsubFolder2_1State extends State<UnprotectedsubFolder2_1> {
                             );
                           },
                           child: const Image(
-                            image: AssetImage("assets/subFolderImages/11.png"),
+                            image: AssetImage(
+                                "assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_2_emotion/Insula_and_depression/icon.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -94,7 +95,8 @@ class _UnprotectedsubFolder2_1State extends State<UnprotectedsubFolder2_1> {
                             );
                           },
                           child: const Image(
-                            image: AssetImage("assets/subFolderImages/12.png"),
+                            image: AssetImage(
+                                "assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_2_emotion/Insula_and_depression/image.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -126,13 +128,13 @@ class _UnprotectedsubFolder2_1State extends State<UnprotectedsubFolder2_1> {
                               MaterialPageRoute(
                                 builder: (context) => FullScreenImageViewer(
                                     imagePath:
-                                        "assets/MainFolder3_assets/UnprotectedFolder_assets/Folder2/unprotectedsubFolder2_1_1.png"),
+                                        "assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_2_emotion/Insula_and_depression/icon.png"),
                               ),
                             );
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/MainFolder3_assets/UnprotectedFolder_assets/Folder2/unprotectedsubFolder2_1_1.png"),
+                                "assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_2_emotion/Insula_and_depression/icon.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

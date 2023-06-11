@@ -39,12 +39,13 @@ class _UnprotectedSubFolder2_3State extends State<UnprotectedSubFolder2_3> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/MainFolder1_assets/Unprotected-Videos/Unprotected-video2_3/'))
+            'assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/8-9_H2O_drama/'))
         .toList();
     setState(() {
       videoPath = assets;
     });
     debugPrint("$videoPath");
+    videoPath.removeWhere((element) => element.contains(".png"));
     videosFetched = loadVideoPlayer();
   }
 

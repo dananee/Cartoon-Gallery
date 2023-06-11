@@ -68,73 +68,79 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
-    - assets/videos1/videos2/videos2/
     - assets/HomeScreen/
-    - assets/SubFolders/emptyfolder.png
     # Folder 3
-    - assets/Folder 3/
-    - assets/Folder 3/52 password protected folders/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/icon/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/1. Fear/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/1. Fear/Fearintro.mp4
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/2. Castle game/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/3. Purpose of emotion/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/4. Graph/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/5. Neurotransmitters/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/5. Neurotransmitters/Little bird story/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/6. Begin happy journaling/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 2 - emotion/
-    - assets/Folder 3/Completed lessons icon 3. No password required/Level 2 - emotion/Insula and depression/
+    - assets/Folder_3/
+    - assets/Folder_3/52_password_protected_folders/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/icon/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/1_Fear/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/2_Castle_game/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/3_Purpose_of_emotion/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/4_Graph/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/5_Neurotransmitters/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/5_Neurotransmitters/main/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/5_Neurotransmitters/Little_bird_story/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/6_Begin_happy_journaling/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_2_emotion/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_2_emotion/main_2/
+    - assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_2_emotion/Insula_and_depression/
     # Folder 4
-    - assets/Folder 4/ 
+    - assets/Folder_4/ 
     # Folder for icon 1
-    - assets/Folder for icon 1/52 Password protected folders/
-    - assets/Folder for icon 1/Folder 1/1. Reality Express Introduction/
-    - assets/Folder for icon 1/Folder 1/1. Reality Express Introduction/1. Reality Express Foundation/
-    - assets/Folder for icon 1/Folder 1/1. Reality Express Introduction/2. Repeating Cycle/
-    - assets/Folder for icon 1/Folder 1/1. Reality Express Introduction/3. Preview of each car/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/1. child atom/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/1. Mature atom/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/2. child atom/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/2. Mature atom/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/3. Real science/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/4. Proton and shells/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/5-7 Molecules/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/5-7 Molecules/5. Child/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/5-7 Molecules/5. Mature/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/5-7 Molecules/6. Child/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/5-7 Molecules/6. mature/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/5-7 Molecules/7 Adults/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/5-7 Molecules/7 Children/
-    - assets/Folder for icon 1/Folder 1/2. Biology Foundation/8-9. H2O drama/
+    - assets/Folder_for_icon_1/52_Password_protected_folders/
+    - assets/Folder_for_icon_1/Folder_1/1.Reality_Express_Introduction/
+    - assets/Folder_for_icon_1/Folder_1/1.Reality_Express_Introduction/1.Reality_Express_Foundation/
+    - assets/Folder_for_icon_1/Folder_1/1.Reality_Express_Introduction/2.Repeating_Cycle/
+    - assets/Folder_for_icon_1/Folder_1/1.Reality_Express_Introduction/3.Preview_of_each_car/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/1-4_Tower_(Atoms)/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/icons/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/1-4_Tower_(Atoms)/1.child_atom/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/1-4_Tower_(Atoms)/1.Mature_atom/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/1-4_Tower_(Atoms)/2.child_atom/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/1-4_Tower_(Atoms)/2.Mature_atom/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/1-4_Tower_(Atoms)/3.Real_science/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/1-4_Tower_(Atoms)/4.Proton_and_shells/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/icons/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/5.Child/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/5.Mature/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/6.Child/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/6.mature/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/7.Adults/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/7.Children/
+    - assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/8-9_H2O_drama/
     # Folder for icon 2
-    - assets/Folder for icon 2/
-    - assets/Folder for icon 2/52 password protected folders/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/1. Brain Computation car Intro/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/1. Brain Computation car Intro/Treehouse 1/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/2. car alarm game/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/2. car alarm game/Treehouse 2/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/3. Neuro/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/4. M_M game/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/5. king and general. either-or/1-3 adults. king or general/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/5. king and general. either-or/1. Treehouse 3/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/1. Intro to perception/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/1. Intro to perception/1. Post VR. all ages/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/1. Intro to perception/1. Post VR. all ages/English subtitles/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/1. Intro to perception/1. Post VR. all ages/Yiddish subtitles/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/1. Intro to perception/2. teen-adults/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/1. adults/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/1. Children/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/
-    - assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/3. Art lesson 1/
-
-
-
+    - assets/Folder_for_icon_2/
+    - assets/Folder_for_icon_2/52_password_protected_folders/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/icons/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/1.Brain_Computation_car_Intro/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/5.king_and_general_either-or/icons/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/1.Brain_Computation_car_Intro/Treehouse_1/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/2.car_alarm_game/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/2.car_alarm_game/Treehouse_2/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/3.Neuro/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/4.M_M_game/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/5.king_and_general_either-or/1-3_adults_king_or_general/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/5.king_and_general_either-or/1.Treehouse_3/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/icon/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/1.Intro_to_perception/1.Post_VR_all_ages/icon/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/1.Intro_to_perception/1.Post_VR_all_ages/English_subtitles/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/1.Intro_to_perception/1.Post_VR_all_ages/Yiddish_subtitles/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/icon/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/1.Intro_to_perception/icon/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/1.Intro_to_perception/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/1.Intro_to_perception/1.Post_VR_all_ages/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/1.Intro_to_perception/1.Post_VR_all_ages/English_subtitles/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/1.Intro_to_perception/1.Post_VR_all_ages/Yiddish_subtitles/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/1.Intro_to_perception/2.teen_adults/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/1.adults/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/1.Children/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/
+    - assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/3.Art_lesson_1/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

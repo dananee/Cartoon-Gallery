@@ -39,7 +39,7 @@ class _UnprotectedSubFolder2_2_1State extends State<UnprotectedSubFolder2_2_1> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-        'assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video2_2_1/'))
+            'assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/1.adults/'))
         .toList();
     setState(() {
       videoPath = assets;
@@ -162,7 +162,7 @@ class _UnprotectedSubFolder2_2_1State extends State<UnprotectedSubFolder2_2_1> {
                                                               );
                                                             },
                                                             child: Image.asset(
-                                                              "assets/MainFolder2_assets/UnprotectedFolder_assets/Folder2_2/subfolder2_2_1_1-icon.png",
+                                                              "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/icon/Picture_18.png",
                                                               fit: BoxFit
                                                                   .contain,
                                                             ),

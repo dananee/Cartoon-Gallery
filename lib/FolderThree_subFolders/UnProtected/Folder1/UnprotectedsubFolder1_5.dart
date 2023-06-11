@@ -1,6 +1,7 @@
 // ignore_for_file: camel_case_types, depend_on_referenced_packages
 
 import 'dart:convert';
+import 'dart:developer';
 import 'package:cartoon_gallery/FolderThree_subFolders/UnProtected/Folder1/UnprotectedsubFolder1_5_1.dart';
 import 'package:cartoon_gallery/main.dart';
 import 'package:flutter/material.dart';
@@ -39,18 +40,21 @@ class _UnprotectedSubFolder1_5State extends State<UnprotectedSubFolder1_5> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/Folder 3/Completed lessons icon 3. No password required/5. Neurotransmitters/'))
+            'assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/5_Neurotransmitters/main/'))
         .toList();
     setState(() {
       videoPath = assets;
     });
-    debugPrint("$videoPath");
+    // videoPath.removeWhere((element) => !element.contains(".mp4"));
+    log("PAth 44444 ${videoPath.length}");
     videosFetched = loadVideoPlayer();
   }
 
   loadVideoPlayer() async {
     for (var element in videoPath) {
+      // if (element.contains(".mp4")) {
       controllersList.add(VideoPlayerController.asset(element));
+      // }
     }
     for (var controller in controllersList) {
       await controller.initialize().then((_) {
@@ -160,7 +164,7 @@ class _UnprotectedSubFolder1_5State extends State<UnprotectedSubFolder1_5> {
                                                             },
                                                             child: const Image(
                                                               image: AssetImage(
-                                                                  "assets/MainFolder3_assets/UnprotectedFolder_assets/Folder1_5/unprotectedsubFolder1_5_1.png"),
+                                                                  "assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/5_Neurotransmitters/Little_bird_story/2C82B49A-242E-4BDD-B398-68CA53AC810F.png"),
                                                             ),
                                                           ),
                                                         )

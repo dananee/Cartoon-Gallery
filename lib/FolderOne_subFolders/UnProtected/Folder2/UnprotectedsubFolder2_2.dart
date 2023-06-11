@@ -39,7 +39,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-        'assets/MainFolder1_assets/UnprotectedFolder_assets/Folder2/Folder2.2/'))
+            'assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/icons/'))
         .toList();
     setState(() {
       allImagesPath = assets;
@@ -68,7 +68,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                 SizedBox(height: 5 * SizeConfig.blockSizeVertical),
                 Container(
                   padding:
-                  EdgeInsets.only(left: 5 * SizeConfig.blockSizeHorizontal),
+                      EdgeInsets.only(left: 5 * SizeConfig.blockSizeHorizontal),
                   width: 100 * SizeConfig.blockSizeHorizontal,
                   height: 15 * SizeConfig.blockSizeVertical,
                   child: Row(
@@ -118,7 +118,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                                                   context,
                                                   MaterialPageRoute(
                                                     builder: (context) =>
-                                                    const UnprotectedsubFolder2_2_1(),
+                                                        const UnprotectedsubFolder2_2_1(),
                                                   ),
                                                 );
                                               } else if (index == 1) {
@@ -126,7 +126,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                                                   context,
                                                   MaterialPageRoute(
                                                     builder: (context) =>
-                                                    const UnprotectedsubFolder2_2_2(),
+                                                        const UnprotectedsubFolder2_2_2(),
                                                   ),
                                                 );
                                               } else if (index == 2) {
@@ -134,7 +134,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                                                   context,
                                                   MaterialPageRoute(
                                                     builder: (context) =>
-                                                    const UnprotectedsubFolder2_2_3(),
+                                                        const UnprotectedsubFolder2_2_3(),
                                                   ),
                                                 );
                                               } else if (index == 3) {
@@ -142,7 +142,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                                                   context,
                                                   MaterialPageRoute(
                                                     builder: (context) =>
-                                                    const UnprotectedsubFolder2_2_4(),
+                                                        const UnprotectedsubFolder2_2_4(),
                                                   ),
                                                 );
                                               } else if (index == 4) {
@@ -150,7 +150,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                                                   context,
                                                   MaterialPageRoute(
                                                     builder: (context) =>
-                                                    const UnprotectedsubFolder2_2_5(),
+                                                        const UnprotectedsubFolder2_2_5(),
                                                   ),
                                                 );
                                               } else if (index == 5) {
@@ -158,7 +158,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                                                   context,
                                                   MaterialPageRoute(
                                                     builder: (context) =>
-                                                    const UnprotectedsubFolder2_2_6(),
+                                                        const UnprotectedsubFolder2_2_6(),
                                                   ),
                                                 );
                                               }

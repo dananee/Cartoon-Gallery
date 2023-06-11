@@ -39,12 +39,13 @@ class _UnprotectedSubFolder1_1State extends State<UnprotectedSubFolder1_1> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/1. Brain Computation car Intro/'))
+            'assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/1.Brain_Computation_car_Intro/'))
         .toList();
     setState(() {
       videoPath = assets;
     });
-    debugPrint("$videoPath");
+    debugPrint("Video Path");
+    videoPath.removeWhere((element) => !element.contains('.mp4'));
     videosFetched = loadVideoPlayer();
   }
 
@@ -160,7 +161,7 @@ class _UnprotectedSubFolder1_1State extends State<UnprotectedSubFolder1_1> {
                                                             },
                                                             child: const Image(
                                                               image: AssetImage(
-                                                                  "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 1 - Brain computation car/1. Brain Computation car Intro/Treehouse 1/Picture3.png"),
+                                                                  "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/1.Brain_Computation_car_Intro/Treehouse_1/Picture3.png"),
                                                             ),
                                                           ),
                                                         )

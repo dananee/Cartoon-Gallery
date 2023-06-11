@@ -73,7 +73,7 @@ class _FolderSelectionTwoState extends State<FolderSelectionTwo> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 2/52 password protected folders/Future brain computation lessons.png"),
+                                "assets/Folder_for_icon_2/52_password_protected_folders/Future_brain_computation_lessons.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

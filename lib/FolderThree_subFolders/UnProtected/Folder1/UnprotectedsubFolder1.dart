@@ -38,7 +38,7 @@ class _UnprotectedsubFolder1State extends State<UnprotectedsubFolder1> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/icon/icon'))
+            'assets/Folder_3/Completed_lessons_icon_3.No_password_required/Level_1_emotion/icon/'))
         .toList();
     setState(() {
       allImagesPath = assets;

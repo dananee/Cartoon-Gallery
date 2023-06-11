@@ -76,7 +76,7 @@ class _UnprotectedsubFolder2State extends State<UnprotectedsubFolder2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/Icon-2.png"),
+                                "assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/1-4_Tower_(Atoms)/Icon-2.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -95,7 +95,7 @@ class _UnprotectedsubFolder2State extends State<UnprotectedsubFolder2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 1/Folder 1/2. Biology Foundation/5-7 Molecules/icon-2.png"),
+                                "assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/5-7_Molecules/icon molecules 5-7.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -114,7 +114,7 @@ class _UnprotectedsubFolder2State extends State<UnprotectedsubFolder2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 1/Folder 1/2. Biology Foundation/8-9. H2O drama/8-10 icon.png"),
+                                "assets/Folder_for_icon_1/Folder_1/2.Biology_Foundation/8-9_H2O_drama/8-10_icon.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

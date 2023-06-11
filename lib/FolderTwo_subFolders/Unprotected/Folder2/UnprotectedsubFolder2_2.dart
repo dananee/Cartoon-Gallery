@@ -80,7 +80,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/1. adults/Picture18.png"),
+                                "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/icon/Picture_18.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -99,7 +99,7 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/1. Children/Picture20.png"),
+                                "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/icon/Picture20.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
@@ -113,13 +113,13 @@ class _UnprotectedSubFolder2_2State extends State<UnprotectedSubFolder2_2> {
                               MaterialPageRoute(
                                 builder: (context) => FullScreenImageViewer(
                                     imagePath:
-                                        "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/Icon option 1.png"),
+                                        "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/Icon_option_1.png"),
                               ),
                             );
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 2/Completed lessons in icon 2. No password required/Level 2 - Perception series/2. intro to Art lesson 1/Icon option 1.png"),
+                                "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_2-Perception_series/2.intro_to_Art_lesson_1/Icon_option_1.png"),
                             fit: BoxFit.contain,
                           ),
                         ),

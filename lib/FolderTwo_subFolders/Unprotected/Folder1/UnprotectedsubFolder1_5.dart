@@ -40,12 +40,13 @@ class _UnprotectedSubFolder1_5State extends State<UnprotectedSubFolder1_5> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1_5/'))
+            'assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/5.king_and_general_either-or/'))
         .toList();
     setState(() {
       videoPath = assets;
     });
     debugPrint("$videoPath");
+    videoPath.removeWhere((element) => !element.contains('.mp4'));
     videosFetched = loadVideoPlayer();
   }
 
@@ -161,7 +162,7 @@ class _UnprotectedSubFolder1_5State extends State<UnprotectedSubFolder1_5> {
                                                             },
                                                             child: const Image(
                                                               image: AssetImage(
-                                                                  "assets/MainFolder2_assets/UnprotectedFolder_assets/subfolder1_5_1-icon.png"),
+                                                                  "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/5.king_and_general_either-or/icons/icon1.png"),
                                                             ),
                                                           ),
                                                         )
@@ -185,7 +186,7 @@ class _UnprotectedSubFolder1_5State extends State<UnprotectedSubFolder1_5> {
                                                             },
                                                             child: const Image(
                                                               image: AssetImage(
-                                                                  "assets/MainFolder2_assets/UnprotectedFolder_assets/subfolder1_5_2-icon.png"),
+                                                                  "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/5.king_and_general_either-or/icons/Picture9.png"),
                                                             ),
                                                           ),
                                                         )

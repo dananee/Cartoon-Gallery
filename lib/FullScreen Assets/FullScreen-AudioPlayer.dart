@@ -62,27 +62,30 @@ class _FullScreenAudioPlayerState extends State<FullScreenAudioPlayer> {
       audioPath = path.join(
           '/storage/emulated/0/',
           'cartoon-gallery-assets',
-          'MainFolder3-assets',
-          'Unprotected-Videos',
-          'Unprotected_video2_1',
+          'Folder_3',
+          'Completed_lessons_icon_3.No_password_required',
+          'Level_2_emotion',
+          'Insula_and_depression',
           'audio1.mp3');
       image = "assets/subFolderImages/11.png";
     } else if (audioNumber == 2) {
       audioPath = path.join(
           '/storage/emulated/0/',
           'cartoon-gallery-assets',
-          'MainFolder3-assets',
-          'Unprotected-Videos',
-          'Unprotected_video2_1',
+          'Folder_3',
+          'Completed_lessons_icon_3.No_password_required',
+          'Level_2_emotion',
+          'Insula_and_depression',
           'audio2.mp3');
       image = "assets/subFolderImages/12.png";
     } else if (audioNumber == 3) {
       audioPath = path.join(
           '/storage/emulated/0/',
           'cartoon-gallery-assets',
-          'MainFolder3-assets',
-          'Unprotected-Videos',
-          'Unprotected_video2_1',
+          'Folder_3',
+          'Completed_lessons_icon_3.No_password_required',
+          'Level_2_emotion',
+          'Insula_and_depression',
           'audio3.mp3');
       image = "assets/subFolderImages/13.png";
     }

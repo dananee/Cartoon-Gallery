@@ -38,19 +38,21 @@ class _UnprotectedsubFolder1_3State extends State<UnprotectedsubFolder1_3> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/Folder for icon 1/Folder 1/2. Biology Foundation/1-4 Tower (Atoms)/1. child atom/'))
+            'assets/Folder_for_icon_1/Folder_1/1.Reality_Express_Introduction/3.Preview_of_each_car/'))
         .toList();
     setState(() {
       videoPath = assets;
     });
-    debugPrint("$videoPath");
+    videoPath.removeWhere((element) => element.contains(".png"));
     videosFetched = loadVideoPlayer();
   }
 
   loadVideoPlayer() async {
     for (String element in videoPath) {
-      print('VIDERO Path ${element}');
+      print('VIDERO Path ${element.contains(".mp4")}');
+      // if (element.contains(".mp4")) {
       controllersList.add(VideoPlayerController.asset(element));
+      // }
     }
     for (var controller in controllersList) {
       await controller.initialize().then((_) {
@@ -146,6 +148,8 @@ class _UnprotectedsubFolder1_3State extends State<UnprotectedsubFolder1_3> {
                                                         .blockSizeHorizontal,
                                                 child: GestureDetector(
                                                   onTap: () {
+                                                    print(
+                                                        'PAth - ${videoPath[index]}');
                                                     Navigator.push(
                                                       context,
                                                       MaterialPageRoute(

@@ -28,7 +28,7 @@ class _UnprotectedSubFolder1State extends State<UnprotectedSubFolder1> {
   @override
   void initState() {
     controller = VideoPlayerController.asset(
-        "assets/Folder 3/Completed lessons icon 3. No password required/Level 1 - emotion/2. Castle game/2. game instructions.mp4");
+        "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/video1.mp4");
     controller.initialize();
     setState(() {
       allImagesPath = [];
@@ -43,7 +43,7 @@ class _UnprotectedSubFolder1State extends State<UnprotectedSubFolder1> {
 
     final assets = manifestMap.keys
         .where((String key) => key.startsWith(
-            'assets/MainFolder2_assets/UnprotectedFolder_assets/Folder1/'))
+            'assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/icons/'))
         .toList();
     setState(() {
       allImagesPath = assets;
@@ -133,7 +133,7 @@ class _UnprotectedSubFolder1State extends State<UnprotectedSubFolder1> {
                                                             builder: (context) =>
                                                                 FullScreenVideo(
                                                                     videoUrl:
-                                                                        "assets/MainFolder2_assets/Unprotected-Videos/Unprotected-video1/video1.mp4"),
+                                                                        "assets/Folder_for_icon_2/Completed_lessons_in_icon_2_No_password_required/Level_1-Brain_computation_car/video1.mp4"),
                                                           ),
                                                         );
                                                       },

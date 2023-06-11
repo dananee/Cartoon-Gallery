@@ -74,7 +74,7 @@ class _FolderSelectionOneState extends State<FolderSelectionOne> {
                           },
                           child: const Image(
                             image: AssetImage(
-                                "assets/Folder for icon 1/52 Password protected folders/Future Train engine lessons icon.png"),
+                                "assets/Folder_for_icon_1/52_Password_protected_folders/Future_Train_engine_lessons_icon.png"),
                             fit: BoxFit.contain,
                           ),
                         ),
