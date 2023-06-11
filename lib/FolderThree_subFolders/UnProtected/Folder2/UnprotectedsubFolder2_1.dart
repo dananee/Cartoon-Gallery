@@ -25,7 +25,7 @@ class _UnprotectedsubFolder2_1State extends State<UnprotectedsubFolder2_1> {
           height: 100 * SizeConfig.blockSizeVertical,
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/HomeScreen/mai-bg.png'),
+              image: AssetImage('assets/HomeScreen/main-bg.png'),
               fit: BoxFit.cover,
             ),
           ),

@@ -150,8 +150,8 @@ class _VideoFolderFourState extends State<VideoFolderFour> {
     final Map<String, dynamic> manifestMap = json.decode(manifestContent);
 
     final assets = manifestMap.keys
-        .where(
-            (String key) => key.startsWith('assets/Folder4/$assetFolderNumber'))
+        .where((String key) =>
+            key.startsWith('assets/Folder_4/$assetFolderNumber'))
         .toList();
     setState(() {
       assetsPath = assets;
